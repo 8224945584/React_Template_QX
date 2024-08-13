@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+   
+    
+}
+.video{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.logo{
+    width: 10%;
+}
+.logo img{
+    width: 100%;
+    object-fit: cover;
+}
+.nav{
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top:0px; */
+    width: 100vw;
+    height: 70px;
+   
+}
+ul li{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: large;
+}
+ul li:hover{
+    background-color: white;
+    cursor: pointer ;
+    color: black;
+    scale: 1.5 ease;
+    
+    /* border-radius: 10px; */
+    border: 1px solid black;
+    transform: rotate3d(45deg);
+}
+
+ul{
+    margin-left:180px ;
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.button {
+    padding: 40px;
+    
+}
+.video{
+    position: relative;
+}
+button{
+    padding: 10px;
+    border-radius: 50px;
+    height: 35px;
+    margin-right: 40px;
+    backdrop-filter: blur(10px);
+}
+.button :hover{
+    background-color: black;
+    scale: 1.5;
+    color: white;
+    border: 2px solid white;
+}
+.data{
+    position: absolute;
+    top: 35%;
+    left: 45px;
+    color: white;
+    font-weight: 2px;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transform: translate(-100%);
+    animation: gola 2s forwards ;
+}
+@keyframes gola{
+    100% {
+        transform: translateX(0);
+        /* background-color: aqua; */
+    }
+}
+.btn2 {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    left: 85px;
+    width: 435px;
+    border-radius: 50%;
+    
+    
+    
+    
+}
+.btn2 button{
+
+    background-image: linear-gradient( to right, #0e17ff, #ff00b7);
+    height: 50px;
+    /* width: 85%; */
+    color: white;
+    /* padding: 25px; */
+    transform: translate(-100%);
+    margin-top: 3px;
+    height: 60px; 
+    animation: swing 2s forwards ;
+    
+    
+}
+@keyframes swing{
+    100% {
+        transform: translateX(0);
+        
+    }
+}
+.main{
+    width: 100%;
+    height: 350px;
+}
