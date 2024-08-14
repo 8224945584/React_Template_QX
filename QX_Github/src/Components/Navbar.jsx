@@ -6,7 +6,7 @@ function Navbar() {
    <div className="video">
    <video width ="100%" autoPlay loop muted src="https://aiko.bold-themes.com/main-demo/wp-content/uploads/sites/4/hero_video.mp4"></video>
   <div className="data">
-  <span><h3><i>Debugshala</i> </h3></span>
+  <span><h3><i>QX LAB AI</i> </h3></span>
    <span><h1>WORLD'S FIRST HYBRIDAGI</h1></span>
    <span><h1>AGI PLATEFORM</h1></span>
   </div>
