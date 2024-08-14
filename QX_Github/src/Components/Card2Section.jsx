@@ -1,0 +1,50 @@
+// CardSection.js
+import React from 'react';
+import Card from './CardProps';
+import './Card2Section.css';
+
+
+
+
+
+
+const cardData = [
+  {
+    title: "Custom AI Model Development",
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxrAJGakZErH0eDNMpqkddBZORRNvZghfuUQ&s" // Replace with the actual path to your icon
+  },
+  {
+    title: "Business Process Automation",
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6WplS2uKurf-yZH_uAt0S1zyJ7NtXbCbTmg&s" // Replace with the actual path to your icon
+  },
+  {
+    title: "Forecasting & Optimization",
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiI19MbQ6vuGL80rWyra8I2UUkn1EBXKUvbQ&s" // Replace with the actual path to your icon
+  },
+  {
+    title: "Personalized Recommendations and Targeting",
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpFj_5D3602w2U9kR0uN2H8pRCm5LHBvSKkg&s" // Replace with the actual path to your icon
+  },
+  {
+    title: "Predictive Analytics and Decision Making",
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7uHp3DjKFLMj38p-iL6bnnA50OMP26_fV4g&s" // Replace with the actual path to your icon
+  },
+  {
+    title: "Natural Language Processing and Text Analytics",
+    icon: "data:image/jpeg;base64,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" // Replace with the actual path to your icon
+  }
+];
+
+const CardSection = () => {
+  return (
+    <div className="card-section">
+      {cardData.map((card, index) => (
+        <Card key={index} icon={card.icon} title={card.title} />
+       
+      ))}
+    </div>
+  );
+};
+
+export default CardSection;
+
