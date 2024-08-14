@@ -12,10 +12,6 @@ export default function App() {
     <>
      <Navbar />
      <Three />
-     <TextSection />
-      <CardSection />
-      <HeaderSection/>
-      <Card2Section />
     </>
   )
 }
