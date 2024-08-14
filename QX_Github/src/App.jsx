@@ -8,6 +8,7 @@ export default function App() {
     <>
      <Navbar />
      <Three />
+     <h2>nayi file banai</h2>
     </>
   )
 }
