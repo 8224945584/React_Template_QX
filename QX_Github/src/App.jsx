@@ -8,6 +8,7 @@ export default function App() {
     <>
      <Navbar />
      <Three />
+     <h3>jdrgerugjrgu</h3>
     </>
   )
 }
